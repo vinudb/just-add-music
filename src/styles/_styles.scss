@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+}
+
+html { 
+    background: url("../wallpaper.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+// *, *:before, *:after {
+//     box-sizing: inherit;
+// }
+  
+// body, html {
+//     height: 100%;
+//     margin: 0;
+// }
+
+.loader {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+  }
+  
+  .loader__image {
+    height: 6rem;
+    width: 6rem;
+  }
+
+.thumbnailComponent{
+    width: 100px;
+    height: 100px;
+}
+
+.musicListItemComponent{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.marginZero{
+    margin: 0;
+}
+
+.displayFlexHorizontal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.commentButton{
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+
+.interactContainer{
+    display: flex;
+}
+
+.title{
+    font-family: Didact Gothic;
+    letter-spacing: 5px;
+    color:$heart;
+    font-size: 1.5rem;
+}
+
+.musicTitle{
+    font-family: Didact Gothic;
+    letter-spacing: 2px;
+    color: rgba(0,0,0,.6);
+    font-size: 1.3rem;
+}
+
+.musicSubtitle{
+    font-family: Didact Gothic;
+    letter-spacing: 1px;
+    color: rgb(0,0,0);
+    font-size: 0.7rem;
+}
+
+.button {
+    background: goldenrod;
+    border: 1px solid white;
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 2.2rem;
+    width: 90%;
+  }
+  
+  .nextButton{
+    @extend .button;
+    background: goldenrod;
+    width: 75%;
+  }
+  
+  .prevButton{
+    @extend .nextButton;
+  }
+
+  .nextButtonContainer{
+    width: 50%;
+    text-align: right;
+  }
+  
+  .prevButtonContainer{
+    width: 50%;
+    text-align: left;
+  } 
+
+  .content-container {
+    margin: 0 auto;
+    padding: 0 1.6rem;
+    max-width: 80rem; 
+    @media (min-width: 70rem) {
+        padding: 1.5rem 25rem;
+    }
+}
+
+.listItem{
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin-bottom: 10px;
+    background-color: $listItemBackground;
+    color: white;
+}
+
+.text-input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100%;
+  margin: 20px auto 10px auto;
+  padding: 15px 0 15px 10px;
+  font-size: 1.5rem;
+}
+  

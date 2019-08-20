@@ -1,68 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#VINAY_SRIDHARA COMMENTS ON THE PROJECT "JAM - Music list with player"
+- To view the output in the development mode, follow the steps as given below:
+1) In the console, navigate to the project folder.
+2) Run command "npm install". This will install all the dependencies and creates a node-modules folder.
+   This process takes around 5-8 mins to complete.
+3) Run command "npm start". Runs the app in the development mode.
+   Opens the application in the browser
+4) Run command "npm test" to run all the test cases.
 
-## Available Scripts
+Highlights:-
+- Used https://cors-anywhere.herokuapp.com/ to enable cross origin requests
+- Since the like, comment api were creating cors error, I have written a wrapper api to access JAM interact api in php and hosted in https://piddling-worksheets.000webhostapp.com
+- Used node-sass library for using scss and it's features
+- The design is responsive.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Feature:-
+- Display all the music items from the data fetched from JAM Api
+- Click on PLAY button will play the actual music. Have used react-howler for the music player
+- Click on LIKE button will call the JAM interact API and also changes the UI with little animation
+- Click on COMMENT button will open a react modal where user can feed the comment and submit. This will call JAM ineract API to update the comment.
+- Results limit is set 4to 4 per page. Pagination is implemented with next and previous buttons. 
+- I have used stock image for the wallpaper from my personal depositPhotos paid account.
+- I have used JAM company logo for creating GIF image for the loader and also for favicon.
